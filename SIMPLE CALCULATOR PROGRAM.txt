@@ -1,0 +1,26 @@
+# SIMPLE CALCULATOR PROGRAM
+# Function to perform the calculation based on the chosen operation
+def calculate(n1, n2, operation):
+    if operation == '1':
+        return n1 + n2
+    elif operation == '2':
+        return n1 - n2
+    elif operation == '3':
+        return n1 * n2
+    elif operation == '4':
+        return n1 / n2
+    else:
+        return "Invalid operation choice!"
+# Display the available operations
+print("Select an operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+# Takes inputs from the user
+operation = input("Enter the number corresponding to the operation you want to perform (1/2/3/4): ")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+# Perform the calculation and display the result
+result = calculate(num1, num2, operation)
+print(f"The result is: {result}")
